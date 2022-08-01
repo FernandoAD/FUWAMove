@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=PT+Sans+Narrow&display=swap");
+* {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+/***GOOGLE TRANSLATE***/
+.google-translate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/***LOGO***/
+.logo-container {
+  background-color: #a5a685;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12vh;
+  width: 100%;
+}
+
+.logo-container img {
+  width: 30%;
+}
+
+/***BANNER***/
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/images/street2.jpg");
+  background-position: 10% 20%;
+  background-size: cover;
+  height: 55vh;
+}
+
+.banner h2 {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+/***SECTION***/
+.section-title {
+  padding-top: 2vh;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 5vh;
+}
+
+/***ROW***/
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.box {
+  width: 5rem;
+  padding-bottom: 2vh;
+  width: auto;
+}
+
+.box-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box span {
+  color: #fff;
+  font-size: 3.2vh;
+  background-color: #000;
+  border-radius: 100%;
+}
+
+/***BUTTONS***/
+.btn-brown {
+  padding: 1.5vh 3vh;
+  border-radius: 15px;
+  margin-top: 2vh;
+  background-color: #a5a685;
+  border: solid 2px #73455e;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-brown:hover {
+  background-color: #73455e;
+  transition: all 0.5s;
+}
+
+/***LENGUAGES***/
+.box img {
+  width: 20px;
+}
+
+/***PROBLEM***/
+.problem {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1001%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(165%2c 166%2c 133%2c 1)'%3e%3c/rect%3e%3cpath d='M190.19 623.49C385.65 613.78 537.89 272.11 889.59 271.9 1241.29 271.69 1407.03 471.5 1588.99 473.5' stroke='rgba(183%2c 217%2c 150%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M569.87 608.82C676.88 578.22 641.24 278.06 867.3 277.57 1093.35 277.08 1306.44 460.26 1462.15 462.37' stroke='rgba(183%2c 217%2c 150%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M226.09 650.98C395.69 592.77 421.21 108.55 677.11 93.27 933.02 77.99 902.63 163.27 1128.14 163.27 1353.65 163.27 1465.05 93.48 1579.16 93.27' stroke='rgba(183%2c 217%2c 150%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M634.5 655.92C758.69 593.14 697.83 189.06 932.25 185.62 1166.67 182.18 1371.89 368.31 1527.76 370.42' stroke='rgba(183%2c 217%2c 150%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M359.58 594.19C493.31 572.09 555.77 249.08 774.69 245.39 993.6 241.7 982.24 315.39 1189.79 315.39 1397.35 315.39 1499.66 245.63 1604.9 245.39' stroke='rgba(183%2c 217%2c 150%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1001'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.problem .btn-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2vh;
+}
+
+/***FOOTER***/
+
+footer {
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
+footer p {
+  padding-top: 1em;
+  color: #fff;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 0.5em 2em;
+}
+
+.flags-container {
+  background-color: #a5a685;
+}
+
+@media (min-width: 767px) {
+  .logo-container img {
+    width: 23%;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1082px) {
+  p {
+    font-size: 2.7vh;
+  }
+
+  .form-section .container,
+  .user-section .container {
+    flex-direction: row;
+  }
+
+  .logo-container img {
+    width: 10%;
+  }
+
+  .banner {
+    background-position: 10% 25%;
+    background-size: cover;
+    height: 70vh;
+  }
+}

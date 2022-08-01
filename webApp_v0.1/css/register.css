@@ -1,0 +1,76 @@
+.register,
+.fuwa-form {
+  padding-top: 12vh;
+  background-image: url("/images/sunset3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fuwa-form {
+  background-image: url("/images/sunset2.jpg");
+}
+
+.register .section-title,
+.fuwa-form .section-title {
+  padding-bottom: 5vh;
+}
+
+.register .section-title h2,
+.fuwa-form .section-title h2 {
+  color: #fff;
+  text-shadow: 1px 1px #edf2c4;
+}
+
+label {
+  color: #fff;
+}
+
+.fuwa-form label {
+  padding-bottom: 1vh;
+}
+
+.register .form,
+.fuwa-form .form {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+form .row,
+.fuwa-form .row {
+  padding-bottom: 3vh;
+}
+
+.form-group {
+  padding-bottom: 3vh;
+}
+
+.row a {
+  color: #fff;
+}
+
+.btn-brown {
+  padding: vh 2vh;
+  margin-bottom: 2vh;
+}
+
+label .main-label {
+  text-align: center;
+  font-weight: bold;
+}
+
+.error-p {
+  color: #fff;
+  text-align: center;
+  background-color: rgba(200, 0, 0, 0.5);
+}
+
+.fuwa-form .section-body p {
+  color: #fff;
+}
+
+.fuwa-form .section-txt {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 1.5vh;
+}

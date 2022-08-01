@@ -1,0 +1,41 @@
+.login {
+  background-image: url("/images/furt.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login .section-title {
+  padding-bottom: 5vh;
+}
+
+.login .section-title h2 {
+  color: #fff;
+  text-shadow: 1px 1px #edf2c4;
+}
+
+label {
+  color: #fff;
+}
+
+.login .form {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+  padding-bottom: 3vh;
+}
+
+.row a {
+  color: #fff;
+}
+
+.btn-brown {
+  padding: vh 2vh;
+  margin-bottom: 2vh;
+}
+
+.extra-info {
+  padding-top: 2vh;
+}

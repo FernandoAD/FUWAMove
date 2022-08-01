@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/fontello.css" />
+    <title>FUWA Move</title>
+  </head>
+
+  <body>
+    <div class="logo-container">
+      <img src="images/logo_transparent.png" alt="" />
+    </div>
+    <section class="profile">
+      <div class="container">
+        <div class="section-title">
+          <h2>Votre profil FUWA Move</h2>
+        </div>
+        <div class="row">
+          <div class="info col-sm">
+            <div class="icon">
+              <img src="images/profile.png" alt="" />
+            </div>
+            <div class="info-data">
+              <div class="label">Prénom :</div>
+              <div class="data" id="firstName"></div>
+            </div>
+            <div class="info-data">
+              <div class="label">Nom de famille :</div>
+              <div class="data" id="lastName"></div>
+            </div>
+            <div class="info-data">
+              <div class="label">Adresse :</div>
+              <div class="data" id="adress"></div>
+            </div>
+            <div class="info-data">
+              <div class="label">Email :</div>
+              <div class="data" id="email"></div>
+            </div>
+            <div class="info-data">
+              <div class="label">FUWA Move :</div>
+              <div class="data" id="fuwaMove"></div>
+            </div>
+            <div class="two-buttons">
+              <button
+                type="button"
+                class="btn-brown"
+                onclick="window.location.href='/edit_fr.html'"
+              >
+                Modifier le profil
+              </button>
+              <button
+                type="button"
+                class="btn-brown"
+                onclick="window.location.href='/edit-preferences_fr.html'"
+              >
+                Modifier les préférences
+              </button>
+              <button type="button" class="btn-brown" id="out-btn">
+                Se déconnecter
+              </button>
+            </div>
+          </div>
+
+          <div class="pref col-sm">
+            <h3>Vos Préférences</h3>
+            <div class="no-data">
+              <span class="badge" id="bg"></span>
+              <p id="p-txt"></p>
+              <button
+                type="button"
+                class="btn-brown"
+                id="form-btn"
+                onclick="window.location.href='/fuwa-form_fr.html'"
+              >
+                Aller au formulaire
+              </button>
+            </div>
+          </div>
+
+          <div class="bike-rent" id="bike-rent">
+            <button
+              type="button"
+              class="btn-brown"
+              id="form-btn"
+              onclick="window.location.href='/rentBike_fr.html'"
+            >
+              J'ai besoin d'un vélo
+            </button>
+          </div>
+
+          <div class="bike-offer" id="bike-offer">
+            <h3>Offre de vélo</h3>
+            <p>
+              Nous pensons que votre meilleure option est de louer un vélo, et
+              nous avons l'offre parfaite pour vos besoins.<br />
+
+              Nous avons des vélos qui calculent le prix de la location en
+              fonction de la distance parcourue dans Furtwangen. Si vous êtes
+              intéressés, nous avons une carte qui montre l'emplacement des
+              vélos disponibles.
+            </p>
+            <button
+              type="button"
+              class="btn-brown"
+              id="bike-btn"
+              onclick="window.location.href='/bikeoffer_fr.html'"
+            >
+              Je suis intéressé
+            </button>
+          </div>
+
+          <div class="car-offer" id="car-offer">
+            <h3>Offre de covoiturage</h3>
+            <p>
+              Nous pensons que votre meilleure option est le covoiturage, et
+              nous avons l'offre parfaite pour vos besoins.<br />
+
+              Vous allez recevoir dans les prochains jours un email quand notre
+              algorithme et notre équipe trouveront une correspondance pour
+              votre trajet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>FUWA Move @ 2022</p>
+    </footer>
+  </body>
+  <script type="module" src="js/profile.js"></script>
+</html>

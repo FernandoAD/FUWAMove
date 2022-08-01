@@ -1,0 +1,40 @@
+.bike-offer {
+  background-image: url("/images/bike.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bike-offer h3,
+.bike-offer p {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-shadow: 2px 1px #000;
+}
+
+.bike-map h3 {
+  text-align: center;
+}
+
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map img {
+  width: 50%;
+}
+
+.btn-rent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2vh;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+      integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/fontello.css" />
+    <title>FUWA Move</title>
+  </head>
+
+  <body>
+    <div class="logo-container">
+      <img src="images/logo_transparent.png" alt="" />
+    </div>
+    <section class="login">
+      <div class="container form">
+        <div class="section-title">
+          <h2>Se déplacer n'a jamais été aussi facile</h2>
+        </div>
+        <div class="section-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Nom d'utilisateur</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="Nom d'utilisateur"
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputPassword" class="col-sm-4 col-form-label"
+                >Mot de passe</label
+              >
+              <div class="col-sm-12">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Mot de passe"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="row">
+            <div class="col-sm">
+              <a href="register_fr.html">Je n'ai pas de compte</a>
+            </div>
+          </div>
+          <button type="button" class="btn-brown" id="login">
+            Se connecter
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="extra-info">
+      <div class="container">
+        <div class="section-title">
+          <h2>Les bénéfices de FUWA</h2>
+        </div>
+        <div class="section-body">
+          <div class="row">
+            <div class="col-sm">
+              <div class="box-icon">
+                <span class="icon-cab"></span>
+              </div>
+              <div class="box-title">
+                <p>
+                  Ce n'est pas seulement pour le bénéfice de l'environnement,
+                  mais c'est aussi une grande opportunité d'aider et de
+                  rencontrer d'autres étudiants.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="box-icon">
+                <span class="icon-bicycle-1"></span>
+              </div>
+              <div class="box-title">
+                <p>
+                  Promouvoir l'exercice et le mouvement dans le village de façon
+                  bien plus respectueuse de l'environnement. FUWA Move est une
+                  alternative qui aide les étudiants et qui essaye de résoudre
+                  le problème qu'est le déplacement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>FUWA Move @ 2022</p>
+    </footer>
+  </body>
+  <script type="module" src="js/login.js"></script>
+</html>

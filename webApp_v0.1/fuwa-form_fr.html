@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+    integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="css/register.css" />
+  <link rel="stylesheet" href="css/fontello.css" />
+  <title>FUWA Move</title>
+</head>
+
+<body>
+  <div class="logo-container">
+    <img src="images/logo_transparent.png" alt="" />
+  </div>
+  <section class="fuwa-form">
+    <div class="container form">
+      <div class="section-title">
+        <h2>Parlez nous de votre déplacement</h2>
+      </div>
+      <div class="section-body">
+        <div class="section-txt">
+          <p>
+            Pour générer un plan de déplacement idéal pour vous et pour l'environnement, nous avons besoin que vous
+            remplissiez le formulaire suivant
+          </p>
+        </div>
+        <div class="section-form">
+          <form action="" id="preferences-form">
+            <div class="row">
+              <div class="col">
+                <p>En ce moment, je me déplace avec...</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="now-move" id="now-bike" value="now-bike" />
+                  <label class="form-check-label" for="now-bike">
+                    Vélo
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="now-move" id="now-car" value="now-car" />
+                  <label class="form-check-label" for="now-car"> Voiture </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="now-move" id="now-walk" value="now-walk" checked />
+                  <label class="form-check-label" for="now-walk">
+                    A pieds
+                  </label>
+                </div>
+                <p>Si j'ai besoin de me déplacer sur une courte distance, je préfère utiliser...</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="short-distances" id="short-bike"
+                    value="short-bike" />
+                  <label class="form-check-label" for="short-bike">
+                    Vélo
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="short-distances" id="short-car"
+                    value="short-car" />
+                  <label class="form-check-label" for="short-car">
+                    Voiture
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="short-distances" id="short-walk" value="short-walk"
+                    checked />
+                  <label class="form-check-label" for="short-walk">
+                    A pieds
+                  </label>
+                </div>
+                <p>
+                  Si j'ai besoin de me déplacer sur une moyenne distance, je préfère utiliser...
+                </p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="medium-distances" id="medium-bike"
+                    value="medium-bike" checked />
+                  <label class="form-check-label" for="medium-bike">
+                    Vélo
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="medium-distances" id="medium-car"
+                    value="medium-car" />
+                  <label class="form-check-label" for="medium-car">
+                    Voiture
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="medium-distances" id="medium-bus"
+                    value="medium-bus" />
+                  <label class="form-check-label" for="medium-bus">
+                    Bus
+                  </label>
+                </div>
+                <p>Si j'ai besoin de me déplacer sur une longue distance, je préfère utiliser...</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="large-distances" id="large-bike" value="large-bike"
+                    checked />
+                  <label class="form-check-label" for="large-bike">
+                    Vélo
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="large-distances" id="large-car"
+                    value="large-car" />
+                  <label class="form-check-label" for="large-car">
+                    Voiture
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="large-distances" id="large-bus"
+                    value="large-bus" />
+                  <label class="form-check-label" for="large-bus">
+                    Bus
+                  </label>
+                </div>
+              </div>
+
+              <div class="col">
+                <p>Le lundi, j'ai besoin d'aller...</p>
+                <div class="form-group col-md-4">
+                  <label for="placeMon">Destination</label>
+                  <select id="placeMon" class="form-control">
+                    <option selected>Je n'ai pas besoin de me déplacer</option>
+                    <option>Bâtiment A</option>
+                    <option>REWE</option>
+                    <option>Rößleplatz</option>
+                    <option>EDEKA Bruder</option>
+                    <option>Hinterbreg</option>
+                    <option>Alemannenstraße</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="timeMon">Horaire</label>
+                  <select id="timeMon" class="form-control">
+                    <option selected>Je n'ai pas besoin de me déplacer</option>
+                    <option>8:00</option>
+                    <option>10:00</option>
+                    <option>12:00</option>
+                    <option>14:00</option>
+                    <option>16:00</option>
+                    <option>18:00</option>
+                    <option>20:00</option>
+                  </select>
+                </div>
+                <p>Le mardi, j'ai besoin d'aller...</p>
+                <div class="form-group col-md-4">
+                  <label for="placeTue">Destination</label>
+                  <select id="placeTue" class="form-control">
+                    <option selected>Je n'ai pas besoin de me déplacer</option>
+                    <option>Bâtiment A</option>
+                    <option>REWE</option>
+                    <option>Rößleplatz</option>
+                    <option>EDEKA Bruder</option>
+                    <option>Hinterbreg</option>
+                    <option>Alemannenstraße</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="timeTue">Horaire</label>
+                  <select id="timeTue" class="form-control">
+                    <option selected>Je n'ai pas besoin de me déplacer</option>
+                    <option>8:00</option>
+                    <option>10:00</option>
+                    <option>12:00</option>
+                    <option>14:00</option>
+                    <option>16:00</option>
+                    <option>18:00</option>
+                    <option>20:00</option>
+                  </select>
+                </div>
+                <p>Le mercredi, j'ai besoin d'aller...</p>
+                <div class="form-group col-md-4">
+                  <label for="placeWen">Destination</label>
+                  <select id="placeWen" class="form-control">
+                    <option selected>Je n'ai pas besoin de me déplacer</option>
+                    <option>Bâtiment A</option>
+                    <option>REWE</option>
+                    <option>Rößleplatz</option>
+                    <option>EDEKA Bruder</option>
+                    <option>Hinterbreg</option>
+                    <option>Alemannenstraße</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="timeWen">Horaire</label>
+                  <select id="timeWen" class="form-control">
+                    <option selected>Je n'ai pas besoin de me déplacer</option>
+                    <option>8:00</option>
+                    <option>10:00</option>
+                    <option>12:00</option>
+                    <option>14:00</option>
+                    <option>16:00</option>
+                    <option>18:00</option>
+                    <option>20:00</option>
+                  </select>
+                </div>
+                <p>Le jeudi, j'ai besoin d'aller...</p>
+                <div class="form-group col-md-4">
+                  <label for="placeThu">Destination</label>
+                  <select id="placeThu" class="form-control">
+                    <option selected>Je n'ai pas besoin de me déplacer</option>
+                    <option>Bâtiment A</option>
+                    <option>REWE</option>
+                    <option>Rößleplatz</option>
+                    <option>EDEKA Bruder</option>
+                    <option>Hinterbreg</option>
+                    <option>Alemannenstraße</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="timeThu">Horaire</label>
+                  <select id="timeThu" class="form-control">
+                    <option selected>Je n'ai pas besoin de me déplacer</option>
+                    <option>8:00</option>
+                    <option>10:00</option>
+                    <option>12:00</option>
+                    <option>14:00</option>
+                    <option>16:00</option>
+                    <option>18:00</option>
+                    <option>20:00</option>
+                  </select>
+                </div>
+                <p>Le vendredi, j'ai besoin d'aller...</p>
+                <div class="form-group col-md-4">
+                  <label for="placeFri">Destination</label>
+                  <select id="placeFri" class="form-control">
+                    <option selected>Je n'ai pas besoin de me déplacer</option>
+                    <option>Bâtiment A</option>
+                    <option>REWE</option>
+                    <option>Rößleplatz</option>
+                    <option>EDEKA Bruder</option>
+                    <option>Hinterbreg</option>
+                    <option>Alemannenstraße</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="timeFri">Horaire</label>
+                  <select id="timeFri" class="form-control">
+                    <option selected>Je n'ai pas besoin de me déplacer</option>
+                    <option>8:00</option>
+                    <option>10:00</option>
+                    <option>12:00</option>
+                    <option>14:00</option>
+                    <option>16:00</option>
+                    <option>18:00</option>
+                    <option>20:00</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="row"></div>
+        <button type="button" class="btn-brown" id="savePreferences">
+          Envoyer
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>FUWA Move @ 2022</p>
+  </footer>
+</body>
+<script type="module" src="js/preferences.js"></script>
+
+</html>
